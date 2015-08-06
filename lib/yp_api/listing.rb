@@ -1,18 +1,17 @@
 require "json"
 class YpApi::Listing
-  attr_accessor :listing_id, :accreditations, :ad_image, :ad_image_click, :additional_texts, :after_hours_phone,
-                :akas,:amenities,:associations,:attribution, :attribution_logo, :audio_url,
-                :average_rating, :base_click_url, :business_name, :categories, :certification,
-                :city, :coupon_flag, :coupon_image_url, :coupon_url, :coupons, :custom_link,
-                :custom_link_text, :description1, :description2, :distrib_ad_image, :distrib_ad_image_click,
-                :email, :emergency_phone, :extra_emails, :extra_fax, :extra_phone, :extra_toll_free,
-                :extra_website_urls, :general_info, :has_display_address, :has_priority_shading,
-                :in_business_since, :is_red_listing, :languages_spoken, :latitude, :longitude,
-                :mobile_phone, :more_info_url, :neighborhoods, :omit_address, :omit_phone, :open_hours,
-                :payment_methods, :phone, :primary_category, :print_ad_image, :print_ad_image_click,
-                :rating_count, :services, :slogan, :state, :street, :video_url, :view_phone, :website_url,
-                :zip, :claimed_status, :detailed_hours, :open_status
-  @@path = "/listings/v1/details"
+  attr_accessor :accreditations, :ad_image, :ad_image_click, :additional_texts, :after_hours_phone, :akas, 
+                :amenities, :associations, :attribution, :attribution_logo, :audio_url, :average_rating, 
+                :base_click_url, :business_name, :categories, :certification, :city, :claimed, :claimed_status, 
+                :coupon_flag, :coupon_image_url, :coupon_url, :coupons, :custom_link, :custom_link_text, :description1, 
+                :description2, :detailed_hours, :distrib_ad_image, :distrib_ad_image_click, :email, :emergency_phone, 
+                :extra_emails, :extra_fax, :extra_phone, :extra_toll_free, :extra_website_urls, :features, 
+                :general_info, :has_display_address, :has_priority_shading, :in_business_since, :is_red_listing, 
+                :languages_spoken, :latitude, :listing_id, :longitude, :mobile_phone, :more_info_url, :neighborhoods, 
+                :omit_address, :omit_phone, :open_hours, :open_status, :payment_methods, :phone, :primary_category, 
+                :print_ad_image, :print_ad_image_click, :rating_count, :services, :slogan, :state, :street, :video_url, 
+                :view_phone, :website_url, :zip
+  @@path = "/search-api/search/devapi/details"
   def self.path
     @@path
   end

@@ -1,7 +1,7 @@
 require "json"
 class YpApi::Review
   attr_accessor :rating, :review_body, :review_date, :review_subject, :reviewer
-  @@path = "/listings/v1/reviews"
+  @@path = "/search-api/search/devapi/reviews"
   def self.path
     @@path
   end

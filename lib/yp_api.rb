@@ -1,5 +1,5 @@
 module YpApi
-  @@base_url = "http://api2.yp.com"
+  @@base_url = "http://pubapi.yp.com"
   @@key = "CHANGEME"
   def self.key
     @@key
